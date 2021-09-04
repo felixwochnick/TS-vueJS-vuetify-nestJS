@@ -4,17 +4,15 @@
 PROJECTNAME=`basename "$PWD" | tr '[:upper:]' '[:lower:]'`
 DIR=$PWD
 
-echo '--- Build Serverfunction-App for testing ---'
+echo '--- Build ${PROJECTNAME}-App for testing ---'
 
-echo '\nBuild Serverfunction-App for testing\n'
+echo '\nBuild ${PROJECTNAME}-App for testing\n'
 cd $DIR/backend; yarn build & PINEST=$!
 cd $DIR/frontend; yarn build:production & PIVUE=$!
 
 # Create test bundle
 echo '\nCreate test bundle'
 cd $DIR; mkdir test/; mkdir test/dist; mkdir test/dist/static;
-
-cp -r deno test/dist/static/
 
 wait $PINEST
 cp -r $DIR/backend/dist/* $DIR/test/dist
