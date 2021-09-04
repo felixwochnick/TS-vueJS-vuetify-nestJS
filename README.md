@@ -14,7 +14,7 @@ Template with frontend and backend for Linux/Unix + Docker
 -   docker@20.10.8 or higher
 -   bash@5.0.17(1)-release or higher
 
-## Frontend (Vue2)
+## Frontend (Vue2 + Vuetify)
 
 ```sh
 # open the frontend folder
