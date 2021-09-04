@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# dockerimages
+*_dockerimage.tar
+
+# docker compose
+*docker_compose.yml
+*docker_compose.yaml
+
+# tmp folders
+test/
+production/
