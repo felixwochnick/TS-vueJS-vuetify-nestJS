@@ -26,7 +26,7 @@ yarn serve
 
 ### environment variables
 
-VUE_APP_API_URL: Api url in development mode (you must set yourself)
+VUE_APP_API_URL: Api url in development mode (you must set yourself)  
 VUE_APP_VERSION: Version from package.json
 
 ### connection to backend
